@@ -36,4 +36,4 @@ COPY --from=builder /app/node_modules ./node_modules
 ENV PORT=3000
 EXPOSE 3000
 
-CMD ["sh", "-c", "pnpm start -p ${PORT}"]
+CMD ["sh", "-c", "pnpm start -- -p ${PORT}"]
